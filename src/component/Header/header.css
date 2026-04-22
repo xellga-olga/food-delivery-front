@@ -1,0 +1,252 @@
+.section-header-navbar {
+  width: 100%;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 10px 64px 10px 64px;
+  margin: 10px 0 10px;
+  font-family: "Open Sans", arial, sans-serif;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.location-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.location-selector button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.location-selector button img {
+  width: 16px;
+  height: 19px;
+}
+
+.nav-links-btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: none;
+}
+
+.auth-btn {
+  background: white;
+  border: 1px solid #2a2a2a;
+  cursor: pointer;
+  font-size: 14px;
+  color: #2a3333;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 4px 17px 4px 17px;
+}
+
+.auth-btn:hover {
+  padding: 5px 20px 5px 20px;
+}
+
+.login-btn-link {
+  text-decoration: none;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #df1067;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 4px 17px 4px 17px;
+}
+
+.login-btn-link:hover {
+  padding: 5px 20px 5px 20px;
+  color: #efefef;
+  background-color: #9d144d;
+}
+
+.language-selector-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.language-selector-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.language-trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font:
+    14px "Open Sans",
+    arial,
+    sans-serif;
+  font-weight: 600;
+  color: #2a3333;
+}
+
+.language-value {
+  line-height: 1;
+}
+
+.language-arrow {
+  font-size: 14px;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.language-arrow.open {
+  transform: rotate(180deg);
+}
+
+.language-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  min-width: 180px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: -2px 8px 24px lab(26 0 0 / 0.29);
+  padding: 12px 0;
+  z-index: 20;
+}
+
+.language-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  border: none;
+  padding: 16px 22px;
+  font:
+    14px "Open Sans",
+    arial,
+    sans-serif;
+  font-weight: 600;
+  color: #2a3333;
+  cursor: pointer;
+  text-align: left;
+}
+
+.language-arrow {
+  color: #df1067;
+}
+
+.language-option:hover {
+  background: #f8f8f8;
+}
+
+.language-check {
+  display: flex;
+  width: 28px;
+  height: 28px;
+  color: #df1067;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-check:hover {
+  color: black;
+}
+
+.right-icons-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.right-icon-primary {
+  cursor: pointer;
+}
+
+.right-icon-basket {
+  cursor: no-drop;
+}
+
+/** Styles for the header bottom component
+*/
+
+.navbar-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 10px 73px 10px 73px;
+  margin: 10px 0 10px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.tab-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.tab-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #2a3333;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 0;
+  position: relative;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 28px;
+  padding: 8px 16px;
+  width: 400px;
+  gap: 5px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 15px;
+  font-family: "Open Sans", arial, sans-serif;
+  color: #2a3333;
+}
+
+.search-input::placeholder {
+  color: #8f8f8f;
+}
+
+.search-container:focus-within {
+  background: #ffffff;
+  box-shadow: 0 0 0 2px #df1067;
+}
